@@ -23,10 +23,11 @@ Bacteria[] mika;
  class Bacteria    
  {     
   int myX,myY;
-  int myColor = (int)(Math.random()*256+1);
+  int myColor;
   Bacteria (int x, int y){
     myX = x;
     myY = y;
+    myColor = ((int)(Math.random()*256+1), (int)(Math.random()*256+1),(int)(Math.random()*256+1));
   }
   void walk(){
     myX = myX + (int)(Math.random()*7)-2;
