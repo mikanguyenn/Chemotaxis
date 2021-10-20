@@ -5,7 +5,8 @@ Bacteria[] mika;
    size(500,500);
    background(0);
    frameRate(30);
-   //initialize bacteria variables here 
+   //initialize bacteria variables here
+   mika = new Bacteria [20];
    for(int i = 0; i < mika.length; i++){
    mika[i] = new Bacteria(20,20);
    }
