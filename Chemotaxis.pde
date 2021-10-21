@@ -1,4 +1,4 @@
-//declare bacteria variables here
+/declare bacteria variables here
 Bacteria[] mika;
 Bacteria bob;
  void setup()   
@@ -7,7 +7,7 @@ Bacteria bob;
    background(0);
    frameRate(30);
    //initialize bacteria variables here
-   mika = new Bacteria [20];
+   mika = new Bacteria [70];
    bob = new Bacteria (20,20);
    for(int i = 0; i < mika.length; i++){
    mika[i] = new Bacteria(20,20);
@@ -29,20 +29,24 @@ bob.show();
   int myX,myY;
   int myColor;
   Bacteria (int x, int y){
+    x = (int)(Math.random()*500);
+    y = (int)(Math.random()*500);
     myX = x;
     myY = y;
     myColor = color((int)(Math.random()*256+1), (int)(Math.random()*256+1),(int)(Math.random()*256+1));
   }
   void walk(){
-    myX = myX + (int)(Math.random()*7)-2;
-    myY = myY + (int)(Math.random()*7)-2;
+    myX = myX + (int)(Math.random()*11)-5;
+    myY = myY + (int)(Math.random()*11)-5;
   }
   void move(){
    myX = mouseX;
    myY = mouseY;
   }
   void show(){
+    for(int i = 0; i < mika.length; i++){
     fill(myColor);
     ellipse(myX,myY,20,20);
+    }
   }
  }      
