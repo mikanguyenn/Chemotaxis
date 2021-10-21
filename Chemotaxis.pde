@@ -1,4 +1,4 @@
-/declare bacteria variables here
+//declare bacteria variables here
 Bacteria[] mika;
 Bacteria bob;
  void setup()   
@@ -21,8 +21,8 @@ Bacteria bob;
      mika[i].walk();
      mika[i].show();
    }
-   bob.move();
-   bob.show();
+  bob.move();
+  bob.show();
  }  
  class Bacteria    
  {     
@@ -40,7 +40,13 @@ Bacteria bob;
     myY = myY + (int)(Math.random()*11)-5;
   }
   void move(){
-ellipse(mouseX, mouseY, 100,50);
+   ellipse(mouseX,mouseY,100,100);
+   fill(0);
+   ellipse(mouseX-30,mouseY,40,40);
+   ellipse(mouseX-10,mouseY,40,40);
+   fill(255);
+   ellipse(mouseX-40,mouseY,10,20);
+   ellipse(mouseX-20, mouseY,10,20);
   }
   void show(){
     for(int i = 0; i < mika.length; i++){
