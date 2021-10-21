@@ -40,8 +40,7 @@ bob.show();
     myY = myY + (int)(Math.random()*11)-5;
   }
   void move(){
-   myX = mouseX;
-   myY = mouseY;
+ellipse(mouseX, mouseY, 100,50);
   }
   void show(){
     for(int i = 0; i < mika.length; i++){
