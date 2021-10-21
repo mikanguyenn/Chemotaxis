@@ -33,6 +33,10 @@ Bacteria[] mika;
     myX = myX + (int)(Math.random()*7)-2;
     myY = myY + (int)(Math.random()*7)-2;
   }
+  void move(){
+   myX = mouseX;
+   myY = mouseY;
+  }
   void show(){
     fill(myColor);
     ellipse(myX,myY,20,20);
