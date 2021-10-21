@@ -17,12 +17,12 @@ Bacteria bob;
  {    
    background(0);
    //move and show the bacteria 
-bob.move();
-bob.show();
    for(int i = 0; i < mika.length; i++){
      mika[i].walk();
      mika[i].show();
    }
+   bob.move();
+   bob.show();
  }  
  class Bacteria    
  {     
